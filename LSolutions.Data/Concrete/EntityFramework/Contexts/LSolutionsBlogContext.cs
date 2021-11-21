@@ -19,7 +19,7 @@ namespace LSolutions.Data.Concrete.EntityFramework.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ProgrammersBlog;Trusted_Connection=True;Connect Timeout=30;MultipleActiveResultSets=True;");
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-24QOIF8;Initial Catalog=LSolutionBlog;Integrated Security=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

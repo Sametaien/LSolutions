@@ -57,7 +57,9 @@ namespace LSolutions.Data.Concrete.EntityFramework.Mappings
                 ModifiedDate = DateTime.Now,
                 Description = "Admin",
                 Note = "Admin",
+                Picture = "https://icon-library.com/images/admin_1246350.png",
                 PasswordHash = Encoding.ASCII.GetBytes("e10adc3949ba59abbe56e057f20f883e") //123456
+                
             });
 
 

@@ -26,6 +26,33 @@ namespace LSolutions.Data.Concrete.EntityFramework.Mappings
             builder.Property(c => c.IsDeleted).IsRequired(true);
             builder.Property(c => c.Note).HasMaxLength(500);
             builder.ToTable("Comments");
+
+            builder.HasData(new Comment{
+            
+                Id = 1,
+                ArticleId = 1,
+                Text = "lorem ipsum",
+                CreatedByName = "Admin",
+                CreatedDate = DateTime.Now,
+                IsActive = true,
+                IsDeleted = false,
+                ModifiedByName = "Admin",
+                ModifiedDate = DateTime.Now,
+                Note = "First comment"
+            },
+            new Comment
+            {
+                Id = 2,
+                ArticleId = 2,
+                Text = "lorem ipsum",
+                CreatedByName = "Admin",
+                CreatedDate = DateTime.Now,
+                IsActive = true,
+                IsDeleted = false,
+                ModifiedByName = "Admin",
+                ModifiedDate = DateTime.Now,
+                Note = "First comment"
+            });
         }
     }
 }
